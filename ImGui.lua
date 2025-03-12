@@ -1,3 +1,5 @@
+local imgui_impl = "backends/imgui_impl_"
+
 project "ImGui"
 	kind "StaticLib"
 	language "C++"
@@ -21,9 +23,23 @@ project "ImGui"
 		"imgui_demo.cpp"
 	}
 
+    includedirs
+    {
+        "./",
+    }
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
+        files
+        {
+            imgui_impl.. "win32.h",
+            imgui_impl.. "win32.cpp",
+            imgui_impl.. "dx12.h",
+            imgui_impl.. "dx12.cpp",
+            imgui_impl.. "dx11.h",
+            imgui_impl.. "dx11.cpp",
+        }
 
 	filter "system:linux"
 		pic "On"
