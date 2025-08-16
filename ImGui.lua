@@ -26,6 +26,15 @@ project "ImGui"
     includedirs
     {
         "./",
+
+        --Vulkan SDK
+		VULKAN_SDK .."/Include",
+    }
+
+    files
+    {
+        imgui_impl.. "vulkan.h",
+        imgui_impl.. "vulkan.cpp",
     }
 
 	filter "system:windows"
@@ -37,8 +46,6 @@ project "ImGui"
             imgui_impl.. "win32.cpp",
             imgui_impl.. "dx12.h",
             imgui_impl.. "dx12.cpp",
-            imgui_impl.. "dx11.h",
-            imgui_impl.. "dx11.cpp",
         }
 
 	filter "system:linux"

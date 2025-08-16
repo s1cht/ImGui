@@ -6,10 +6,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="backends\imgui_impl_dx11.h">
+    <ClInclude Include="backends\imgui_impl_dx12.h">
       <Filter>backends</Filter>
     </ClInclude>
-    <ClInclude Include="backends\imgui_impl_dx12.h">
+    <ClInclude Include="backends\imgui_impl_vulkan.h">
       <Filter>backends</Filter>
     </ClInclude>
     <ClInclude Include="backends\imgui_impl_win32.h">
@@ -23,10 +23,10 @@
     <ClInclude Include="imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="backends\imgui_impl_dx11.cpp">
+    <ClCompile Include="backends\imgui_impl_dx12.cpp">
       <Filter>backends</Filter>
     </ClCompile>
-    <ClCompile Include="backends\imgui_impl_dx12.cpp">
+    <ClCompile Include="backends\imgui_impl_vulkan.cpp">
       <Filter>backends</Filter>
     </ClCompile>
     <ClCompile Include="backends\imgui_impl_win32.cpp">
