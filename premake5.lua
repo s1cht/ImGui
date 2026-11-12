@@ -4,6 +4,7 @@ local localBinIntLocation = "%{wks.location}/bin-int/%{cfg.buildcfg}-%{cfg.syste
 if (outputBinDirectory ~= nil) then localBinLocation = outputBinDirectory .. "/%{prj.name}" end
 if (outputInterDirectory ~= nil) then localBinIntLocation = outputInterDirectory .. "/%{prj.name}" end
 
+local VULKAN_SDK = os.getenv("VULKAN_SDK")
 local imgui_impl = "backends/imgui_impl_"
 IMGUI_OUTPUT_DIR = localBinLocation
 

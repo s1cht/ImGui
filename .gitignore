@@ -78,5 +78,4 @@ examples/example_sdl3_sdlrenderer3/example_sdl3_sdlrenderer3
 examples/example_sdl3_vulkan/example_sdl3_vulkan
 
 **.vcxproj
-**.vcxproj.user
-**.vcxproj.filters
+**.vcxproj.**
